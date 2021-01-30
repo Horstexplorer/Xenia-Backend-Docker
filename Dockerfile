@@ -5,6 +5,6 @@ RUN apk update &&\
     cd /XENIABACKENDINSTALL &&\
     wget "https://ci.netbeacon.de/repository/download/Xenia_Backend/latest.lastSuccessful/Xenia-Backend-all.jar?guest=1" -O "Xenia-Backend.jar" &&\
     chmod +x Xenia-Backend.jar &&\
-    mkdir -p /xenia-backend/{config, data, logs}
+    mkdir -p /xenia-backend/{config, logs}
 
 ENTRYPOINT cd /XENIABACKENDINSTALL && java -jar Xenia-Backend.jar $ARGS
