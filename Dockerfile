@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk13:alpine
+FROM adoptopenjdk/openjdk16:alpine
 RUN apk update &&\ 
     apk upgrade &&\
     mkdir /XENIABACKENDINSTALL &&\
